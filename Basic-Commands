@@ -1,0 +1,40 @@
+#### UPDATE CLAMAV ####
+
+$ freshclam
+
+#### SCAN ####
+
+clamscan OPTIONS File/Folder 
+
+To check all files on the computer, displaying the name of each file:
+
+clamscan -r /
+
+To check all files,  display infected files and ring a bell when found:
+
+clamscan -r --bell -i /
+
+clamscan -r -i / &   Runs in the background 
+
+check files in the USER home directory and move infected files to another folder:
+
+clamscan -r --move=/home/USER/VIRUS /home/USER
+
+Scan all home directories only 
+
+clamscan -r /home
+
+Scan & Remove files - (Warning will delete all files)
+
+clamscan -r --remove (dir)
+
+#### HELP ####
+
+clamscan --help
+
+#### MORE EXAMPLES #### #### Make custom batch files to run tasks ####
+
+ sudo clamscan -r --bell --remove -l name
+ sudo clamscan -r --bell --move=/home/clamav/virusdetected
+ sudo clamscan -r  --scan-html=yes -l html_scan1 --remove=yes /home/clamav/ --quiet (remove --quiet to see progress) (--scan-(type of file)=yes/no)
+ sudo clamscan -r  --scan-pdf=yes -l pdf_scan1 --bell /home/clamav/ --move=/home/clamav/virusdetected (you can add --quiet)
