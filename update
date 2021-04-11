@@ -1,0 +1,11 @@
+create batch file 
+
+nano clamavupdate.sh
+
+sudo freshclam
+
+run .sh file 
+
+sudo ./clamavupdate.sh
+
+Or just run cmd in terminal
