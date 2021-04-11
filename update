@@ -2,7 +2,9 @@ create batch file
 
 nano clamavupdate.sh
 
-freshclam
+type: freshclam 
+
+then → control X
 
 then chmod +x clamavupdate.sh
 
