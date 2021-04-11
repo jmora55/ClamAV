@@ -4,6 +4,8 @@ nano clamavupdate.sh
 
 freshclam
 
+then chmod +x clamavupdate.sh
+
 run .sh file 
 
 sudo ./clamavupdate.sh
