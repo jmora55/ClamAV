@@ -2,7 +2,9 @@ create batch file
 
 nano clamavupdate.sh
 
-type: freshclam 
+type: 
+#! /bin/bash
+freshclam 
 
 then → control X
 
