@@ -2,7 +2,7 @@ create batch file
 
 nano clamavupdate.sh
 
-sudo freshclam
+freshclam
 
 run .sh file 
 
